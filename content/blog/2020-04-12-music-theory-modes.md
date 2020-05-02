@@ -8,7 +8,7 @@ tags:
 - Negative Harmony
 - Set Theory (Music)
 author: Rafael S. Calsaverini
-draft: false
+draft: true
 ---
 
 Recently I've been listening to a [12tone video](https://www.youtube.com/watch?v=SF8CdxcdJgw) on YouTube about negative harmony, a concept recently popularized by musician Jacob Collier. On the related links I found a bunch of videos from [this channel](https://www.youtube.com/channel/UCurOAVtqb7kM1siNlDynzFw) with "negative harmony" versions of many popular songs. They have a quite interesting sonority to them, and it struck me that even though the original songs had very strongly major or minor melodies, the transformed melodies had a quality about them that suggest other modes. So, I started musing about it and a few things popped in my head, so this is a write up of some of the stuff I realized. 

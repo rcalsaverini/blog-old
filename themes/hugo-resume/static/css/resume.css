@@ -24,7 +24,7 @@ h6 {
 
 
 h1, h2{
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 h1 {

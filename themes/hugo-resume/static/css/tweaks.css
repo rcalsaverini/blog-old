@@ -100,7 +100,10 @@ div.skills-heading{
 
 /* Fix responsive width for blog posts */
 .my-auto {
-	width: 100%
+  width: 100%;
+  max-width: 850px;
+  min-width: 250px;
+  padding: 50px;
 }
 
 .paper-reference {
@@ -113,4 +116,8 @@ div.skills-heading{
 
 .paper-journal {
   font-style: italic;
+}
+
+.textual-content {
+  text-align: justify;
 }

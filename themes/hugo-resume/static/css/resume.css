@@ -2,7 +2,6 @@ body {
   font-family: 'Open Sans', serif;
   padding-top: 54px;
   color: #868e96;
-  text-align: justify;
 }
 
 @media (min-width: 992px) {
@@ -25,12 +24,12 @@ h6 {
 
 
 h1, h2{
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 h1 {
-  font-size: 6rem;
-  line-height: 5.5rem;
+  font-size: 4rem;
+  line-height: 4.5rem;
 }
 
 h2 {

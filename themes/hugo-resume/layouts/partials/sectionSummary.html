@@ -3,14 +3,8 @@
     <h2 class="mb-5"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     <p>{{ .Content }}</p>
     {{ $featuredPages := where .Pages "Params.featured" true }}
-    {{ range $featuredPages }}
+    {{ range .Pages }}
       {{ partial (printf "%s%s" .Section "Summary") . }}
     {{ end }}
   </div>
-  {{ if gt .Pages $featuredPages }}
-    <div class="my-auto">
-      <h3>Wait! There's more... <a href="{{ .Permalink }}">click here</a> for more! </h3>
-      
-    </div>
-  {{ end }}
 </section>

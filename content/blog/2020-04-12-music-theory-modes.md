@@ -146,6 +146,17 @@ Finally, here's the neat and interesting pattern to notice: if we ignore the roo
 
 The effect of the transformation is to reflect the qualities of the modes around the center of the brightness scale, inverting the value of the brightness for the mode in question (the brightest mode becomes the darkest, the second brightest becomes the second darkest, etc).
 
+## So what?
+
+Yes, this is just a simple neat symmetry I found. I intend to write more later on some other questions:
+
+- What happens when you transform modes of other scales?
+- Modes of the major scale are closed under this transformation. But this definitely won't happen always. What does it mean when it happens?
+- What happens when you transform modes under the negative harmony centered in other keys?
+- Is there a "right" key to use?
+
+Stay tuned.
+
 [12tone]: https://www.youtube.com/watch?v=SF8CdxcdJgw
 [brltheory]: https://www.brltheory.com/resources/negative-harmony-chord-chart/
 [negative-harmony-covers]: https://www.youtube.com/channel/UCurOAVtqb7kM1siNlDynzFw

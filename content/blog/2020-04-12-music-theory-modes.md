@@ -1,6 +1,6 @@
 ---
-title: How do modes transform under negative harmony?
-date: 2021-02-20T23:05:01.798Z
+title: Negative Harmony inverts brightness of modes
+date: 2021-02-20T23:24:31.590Z
 categories:
   - music-theory
 tags:
@@ -9,7 +9,7 @@ tags:
   - Set Theory (Music)
 author: Rafael S. Calsaverini
 draft: false
-slug: modes-transform-negative-harmony
+slug: negative-harmony-inverts-brightness-modes
 ---
 
 ## Intro

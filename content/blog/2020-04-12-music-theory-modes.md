@@ -94,7 +94,7 @@ One aspect that is not often discussed about this transformation is that it is a
 
 ## Transforming modes
 
-Typically negative harmony is discussed [in the context of chords][brl-theory], with an expectation that transformed chords has similar functions (having "equivalent tonal gravity"). I want to discuss how this transformation behaves when considering melodic elements, scales and modes.
+Typically negative harmony is discussed [in the context of chords][brltheory], with an expectation that transformed chords has similar functions (having "equivalent tonal gravity"). I want to discuss how this transformation behaves when considering melodic elements, scales and modes.
 
 To start, let's check what happens when we transform the seven modes of the major scale. For example, let's apply the transformation over the major scale. As an ilustration, the sequence of notes [C, D, E, F, G, A, B] (the Ionian mode of C Major), transformed in the key of C, will result in [G, F, E♭, D, C, B♭, A♭].
 

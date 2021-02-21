@@ -42,14 +42,14 @@ To understand what's the transformation being applied, consider the circle of fi
       \draw[vec] ({\end+\margin}:\radius) arc ({\end+\margin}:{\start-\margin}:\radius);
     }
 
-    \draw [thick,dashed,color=blue!50] (0, -\radius) -- (0, \radius);
+    \draw [thick,dashed,color=violet!50] (0, -\radius) -- (0, \radius);
 
-    \draw[latex-latex,color=blue!50,thick] (a0) to (a1);
-    \draw[latex-latex,color=blue!50,thick] (a2) to (a-1);
-    \draw[latex-latex,color=blue!50,thick] (a3) to (a-2);
-    \draw[latex-latex,color=blue!50,thick] (a4) to (a-3);
-    \draw[latex-latex,color=blue!50,thick] (a5) to (a-4);
-    \draw[latex-latex,color=blue!50,thick] (a6) to (a-5);
+    \draw[latex-latex,color=violet!50,thick] (a0) to (a1);
+    \draw[latex-latex,color=violet!50,thick] (a2) to (a-1);
+    \draw[latex-latex,color=violet!50,thick] (a3) to (a-2);
+    \draw[latex-latex,color=violet!50,thick] (a4) to (a-3);
+    \draw[latex-latex,color=violet!50,thick] (a5) to (a-4);
+    \draw[latex-latex,color=violet!50,thick] (a6) to (a-5);
 
 \end{tikzpicture}
 
@@ -79,14 +79,14 @@ One aspect that is not often discussed about this transformation is that it is a
       \draw[vec] ({\end+\margin}:\radius) arc ({\end+\margin}:{\start-\margin}:\radius);
     }
 
-    \draw [thick,dashed,color=blue!30] (0, -\radius) -- (0, \radius);
+    \draw [thick,dashed,color=violet!30] (0, -\radius) -- (0, \radius);
 
-    \draw[latex-latex,color=blue!50,thick] (a0) to (a1);
-    \draw[latex-latex,color=blue!50,thick] (a2) to (a-1);
-    \draw[latex-latex,color=blue!50,thick] (a3) to (a-2);
-    \draw[latex-latex,color=blue!50,thick] (a4) to (a-3);
-    \draw[latex-latex,color=blue!50,thick] (a5) to (a-4);
-    \draw[latex-latex,color=blue!50,thick] (a6) to (a-5);
+    \draw[latex-latex,color=violet!50,thick] (a0) to (a1);
+    \draw[latex-latex,color=violet!50,thick] (a2) to (a-1);
+    \draw[latex-latex,color=violet!50,thick] (a3) to (a-2);
+    \draw[latex-latex,color=violet!50,thick] (a4) to (a-3);
+    \draw[latex-latex,color=violet!50,thick] (a5) to (a-4);
+    \draw[latex-latex,color=violet!50,thick] (a6) to (a-5);
 
 \end{tikzpicture}
 

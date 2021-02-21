@@ -26,7 +26,7 @@ To understand what's the transformation being applied, consider the circle of fi
 
 {{<tikz caption="The circle of fifths highlighting the negative harmony transformation in the key of C">}}
 
-\begin{tikzpicture}[auto,node distance=2.5cm, block/.style={color=black, align=center, minimum height=1cm, minimum width=1.5cm}, vec/.style={double,thick,color=purple!20}]
+\begin{tikzpicture}[auto,node distance=2.5cm, block/.style={color=black, align=center, minimum height=1cm, minimum width=1.5cm}, vec/.style={thick,color=black!50}]
 
     \def \n {12}
     \def \radius {4 cm}
@@ -38,18 +38,18 @@ To understand what's the transformation being applied, consider the circle of fi
       \def \start {360 * \s / \n + 15}
       \def \end {360 * (\s - 1) / \n + 15}
 
-      \node[block, circle] at ({90-\start}:\radius) (a\s) {\key};
-      \draw[color=purple,vec] ({\end+\margin}:\radius) arc ({\end+\margin}:{\start-\margin}:\radius);
+      \node[block, circle, color=violet] at ({90-\start}:\radius) (a\s) {\Large\key};
+      \draw[vec] ({\end+\margin}:\radius) arc ({\end+\margin}:{\start-\margin}:\radius);
     }
 
-    \draw [thick,dashed,color=blue!30] (0, -\radius) -- (0, \radius);
+    \draw [thick,dashed,color=blue!50] (0, -\radius) -- (0, \radius);
 
-    \draw[latex-latex,color=red!50] (a0) to (a1);
-    \draw[latex-latex,color=red!50] (a2) to (a-1);
-    \draw[latex-latex,color=red!50] (a3) to (a-2);
-    \draw[latex-latex,color=red!50] (a4) to (a-3);
-    \draw[latex-latex,color=red!50] (a5) to (a-4);
-    \draw[latex-latex,color=red!50] (a6) to (a-5);
+    \draw[latex-latex,color=blue!50,thick] (a0) to (a1);
+    \draw[latex-latex,color=blue!50,thick] (a2) to (a-1);
+    \draw[latex-latex,color=blue!50,thick] (a3) to (a-2);
+    \draw[latex-latex,color=blue!50,thick] (a4) to (a-3);
+    \draw[latex-latex,color=blue!50,thick] (a5) to (a-4);
+    \draw[latex-latex,color=blue!50,thick] (a6) to (a-5);
 
 \end{tikzpicture}
 
@@ -63,7 +63,7 @@ One aspect that is not often discussed about this transformation is that it is a
 
 {{<tikz caption="The circle of fifths highlighting the negative harmony transformation in the key of A">}}
 
-\begin{tikzpicture}[auto,node distance=2.5cm, block/.style={color=black, align=center, minimum height=1cm, minimum width=1.5cm}, vec/.style={double,thick,color=purple!20}]
+\begin{tikzpicture}[auto,node distance=2.5cm, block/.style={color=black, align=center, minimum height=1cm, minimum width=1.5cm}, vec/.style={thick,color=black!50}]
 
     \def \n {12}
     \def \radius {4 cm}
@@ -75,18 +75,18 @@ One aspect that is not often discussed about this transformation is that it is a
       \def \start {360 * \s / \n + 15}
       \def \end {360 * (\s - 1) / \n + 15}
 
-      \node[block, circle] at ({90-\start}:\radius) (a\s) {\key};
-      \draw[color=purple,vec] ({\end+\margin}:\radius) arc ({\end+\margin}:{\start-\margin}:\radius);
+      \node[block, circle,color=violet] at ({90-\start}:\radius) (a\s) {\Large\key};
+      \draw[vec] ({\end+\margin}:\radius) arc ({\end+\margin}:{\start-\margin}:\radius);
     }
 
     \draw [thick,dashed,color=blue!30] (0, -\radius) -- (0, \radius);
 
-    \draw[latex-latex,color=red!50] (a0) to (a1);
-    \draw[latex-latex,color=red!50] (a2) to (a-1);
-    \draw[latex-latex,color=red!50] (a3) to (a-2);
-    \draw[latex-latex,color=red!50] (a4) to (a-3);
-    \draw[latex-latex,color=red!50] (a5) to (a-4);
-    \draw[latex-latex,color=red!50] (a6) to (a-5);
+    \draw[latex-latex,color=blue!50,thick] (a0) to (a1);
+    \draw[latex-latex,color=blue!50,thick] (a2) to (a-1);
+    \draw[latex-latex,color=blue!50,thick] (a3) to (a-2);
+    \draw[latex-latex,color=blue!50,thick] (a4) to (a-3);
+    \draw[latex-latex,color=blue!50,thick] (a5) to (a-4);
+    \draw[latex-latex,color=blue!50,thick] (a6) to (a-5);
 
 \end{tikzpicture}
 
@@ -122,14 +122,14 @@ Finally, here's the neat and interesting pattern to notice: if we ignore the roo
 
 \begin{tikzpicture}[auto,node distance=1.25cm, block/.style={rectangle, thick, fill=purple!20, align=center, minimum height=1cm, minimum width=2cm}, vec/.style={double,thick,color=purple!20}, connecto/.style={<->, >=latex, shorten >=2pt, shorten <=2pt, bend left=90, thick, dashed}]
 
-    \draw[thick,dashed,color=orange] (1.5, 0) -- (-1.5, 0);
-    \node[block,] at (0, 0) (dor) {Dorian};
-    \node[block,above of=dor] (mix) {Mixolydian};
-    \node[block,above of=mix] (ion) {Ionian};
-    \node[block,above of=ion] (lyd) {Lydian};
-    \node[block,below of=dor] (aeo) {Aeolian};
-    \node[block,below of=aeo] (phr) {Phrygian};
-    \node[block,below of=phr] (loc) {Locrian};
+    \draw[thick,dashed,color=orange] (5, 0) -- (-2, 0) node[above,color=orange] at (5, 0) {reflexion axis};
+    \node[block,] at (0, 0) (dor) {\normalsize Dorian};
+    \node[block,above of=dor] (mix) {\normalsize Mixolydian};
+    \node[block,above of=mix] (ion) {\normalsize Ionian};
+    \node[block,above of=ion] (lyd) {\normalsize Lydian};
+    \node[block,below of=dor] (aeo) {\normalsize Aeolian};
+    \node[block,below of=aeo] (phr) {\normalsize Phrygian};
+    \node[block,below of=phr] (loc) {\normalsize Locrian};
 
     \draw[vec,->] (-2, -4) -- (-2, 4)
           node[above,sloped,color=purple] at (-2.5, 4) {high brightness}

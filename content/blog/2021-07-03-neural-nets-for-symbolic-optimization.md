@@ -9,7 +9,7 @@ tags:
   - Deep Learning
   - Symbolic Optimization
 author: Rafael S. Calsaverini
-draft: true
+draft: false
 slug: neural-nets-for-symbolic-optimization
 ---
 

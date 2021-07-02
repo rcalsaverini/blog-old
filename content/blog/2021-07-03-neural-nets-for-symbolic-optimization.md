@@ -119,6 +119,13 @@ $$
 \ell(\theta_E, \theta_D, \theta_V) = \sum_{k=1}^N\left[d(e_k, D(\theta_D, E(\theta_E, e_k))) + (V(\theta_V, E(\theta_E, e)) - f(e))^2\right]
 $$
 
+Once we learn the best parameters $\theta_E^\star$, $\theta_D^\star$, $\theta_V^\star$, finding the best expression $e$ that maximizes $f(e)$ can be done by:
+
+- find the vector $\mathbf{x}^\star$ that maximizes $V(\theta_V^\star, $\mathbf{x}$)$;
+- decode it to find the optimal expression associated with it: $e^\star = D(\theta_Dˆ\star, \mathbf{x}^\star)$.
+
+This will probably not be an exact solution, but hopefully one that is good enough.
+
 ### Problems and conclusions
 
 That’s a nice story, but is it actually possible to do? That’s a great question. I tried attacking the regex problem with this idea before and I hit several brick walls (that mainly stem from my lack of knowledge in symbolic computation since my focus is 100% in ML and not in Computer Science in general).

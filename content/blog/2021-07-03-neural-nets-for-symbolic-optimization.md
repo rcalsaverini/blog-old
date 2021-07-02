@@ -39,7 +39,7 @@ $$
 Where:
 
 - $\mathtt{Match}_e(s)$ is 1 if the regular expression e matches the string s and 0 otherwise; and
-- $R(e)$ is some regularization that penalizes regular expressions that are either too "broad" or too "restricted". For example we could penalizing matching random strings and penalize expressions that have a finite (or
+- $\Lambda(e)$ is some regularization that penalizes regular expressions that are either too "broad" or too "restricted". For example we could penalizing matching random strings and penalize expressions that have a finite (or
   too small) match set.
 
 ### What other things we could solve if we learn how to do this?

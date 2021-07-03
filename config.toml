@@ -11,7 +11,7 @@ theme = "hugo-resume"
     contactNote = "Father, Physicist and Data Scientist" #used in QR code only
     profileImage = "images/me.png"
     email = "rafael.calsaverini+blog@gmail.com"
-    description = "Data scientist and manager of data science teams."
+    description = "Random ramblings from an entropy maximizer."
     favicon = "images/favicon.ico"
 
     # what sections to display.  Setting to false disables navigation and section.

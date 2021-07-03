@@ -16,7 +16,7 @@ slug: neural-nets-for-symbolic-optimization
 ### What's Symbolic Optimization
 
 A while ago I was entertaining problems in the intersection of symbolic manipulation of expressions and Deep Learning. In particular I was interested in finding "optimal" expressions in some way. So, imagine you have some grammar $G$ that describe a set of expressions, let's call it $\mathrm{Exp}_G$, and suppose we have a real-valued function that takes an expression and maps into a number $f: \mathrm{Exp}_G \to \mathbb{R}$. The
-problem I want do discuss is finding expressions that minimizes that function:
+problem I want to discuss is finding expressions that minimize that function:
 
 $$
 e^{\star} = \arg \min_{e \in \mathrm{Exp}\_G} f(e)
@@ -26,7 +26,7 @@ $$
 
 Let's discuss one particular toy version of this problem. It might look like a silly problem, but it's simple enough to illustrate the concept and non-trivial enough to avoid simple solutions.
 
-Suppose we have a sets of strings in a dataset. Suppose we hold the hypothesis that there's an underlying logic or grammar that generated those strings and we want to describe commmon patterns in these strings by finding a regular expression that would match as many of those strings as possible. We'd like to use this regular expression to check if future out-of-sample strings we come across display the same patterns and belong to this group.
+Suppose we have a training set that consist of a sample of strings. We hold the hypothesis that there's an underlying logic or grammar that generated those strings and we want to describe commmon patterns in these strings by finding a regular expression that would match as many of those strings as possible. We'd like to use this regular expression to check if future out-of-sample strings we come across display the same patterns and belong to this group.
 
 As an example, suppose our training set consists of the names "Rafael", "Gabriel" and "Manoel". Of course we have infinite regular expressions that match all those names. In particular we have the really trivial option `/Rafael|Gabriel|Manoel/` that would certainly match all strings but would probably fail to match outof-sample items that do match interesting patterns in the training set – for example "Emanuel". In a way, this looks a lot like overfitting in machine learning. Another failure mode would be complete underfitting and choosing the regex `/.\*/`, that certainly fits all in-sample items but would also accept all out-ofsample items, even those that don't match any interesting patterns – for example "Pedro". Probably what we want is something like `/.+el/` or something with more structure.
 

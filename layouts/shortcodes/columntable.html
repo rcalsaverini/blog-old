@@ -1,0 +1,16 @@
+{{ $caption := .Get "caption" }} {{ $data := .Inner | transform.Unmarshal }}
+
+<table class="table table-hover">
+  <tr>
+    {{ range $data.headers }}
+    <th class="table-dark">{{ . }}</th>
+    {{ end }}
+  </tr>
+  {{ range $data.rows }}
+  <tr>
+    {{ range . }}
+        <td>{{ . }}</td>
+    {{ end }}
+  </tr>
+  {{ end }}
+</table>

@@ -8,9 +8,11 @@ tags:
   - Negative Harmony
   - Set Theory (Music)
   - Neo-Riemannian Theory
+  - Chord transformations
 author: Rafael S. Calsaverini
 draft: true
 slug: transforming-modes
+lastmod: 2022-03-13T17:21:07.039Z
 ---
 
 ## Intro

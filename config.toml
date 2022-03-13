@@ -61,8 +61,12 @@ theme = "hugo-resume"
     lineNumbersInTable = true
     noClasses = true
     style = "emacs"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 
 [taxonomies]
   category = "categories"
   tag = "tags"
+

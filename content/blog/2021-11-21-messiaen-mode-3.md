@@ -35,43 +35,43 @@ If you start on any of the roots, the pattern of intervals you see going up is: 
 
 {{< columntable caption="Interval structure" >}}
 
-headers: [Class ,Note,b2/b9,2/9,3m/\#9,3M/b11,4/11,b5/\#11,5 ,\#5/b13,6/13,7m/\#13,7M]
+headers: [Class ,Note,b2/b9,2/9,3m/#9,3M/b11,4/11,b5/#11,5 ,/#5/b13,6/13,7m/#13,7M]
 
 rows:
 
-    Roots:
-
-      - C, _, D, Eb, E, _, F#, G, Ab, \*, Bb, B
+    - [Roots/3, C, -, D, Eb, E, -, F#, G, Ab, -, Bb, B]
+    - [E, -, F#, G, Ab, -, Bb, B, C, -, D, Eb]
+    - [Ab, -, Bb, B, C, -, D, Eb, E, -, F#, G]
+    - [Seconds/3, D, Eb, E, -, F#, G, Ab, -, Bb, B, C, -]
+    - [F#, G, Ab, -, Bb, B, C, -, D, Eb, E, -]
+    - [Bb, B, C, -, D, Eb, E, -, F#, G, Ab, -]
+    - [Thirds/3, Eb, E, -, F#, G, Ab, -, Bb, B, C, -, D]
+    - [G, Ab, -, Bb, B, C, -, D, Eb, E, -, F#]
+    - [B, C, -, D, Eb, E, -, F#, G, Ab, -, Bb]
 
 {{< /columntable >}}
-
-{{< bootstrap-table table_class="table table-hover" thead_class="table-dark" >}}
-
-|  Class  | Note | b2/b9 | 2/9 | 3m/\#9 | 3M/b11 | 4/11 | b5/\#11 | 5   | \#5/b13 | 6/13 | 7m/\#13 | 7M  |
-| :-----: | :--: | :---: | --- | :----: | :----: | :--: | :-----: | --- | :-----: | :--: | :-----: | :-: |
-|  Roots  |  C   |   -   | D   |   Eb   |   E    |  -   |   F\#   | G   |   Ab    |  -   |   Bb    |  B  |
-|         |  E   |   -   | F\# |   G    |   Ab   |  -   |   Bb    | B   |    C    |  -   |    D    | Eb  |
-|         |  Ab  |   -   | Bb  |   B    |   C    |  -   |    D    | Eb  |    E    |  -   |   F\#   |  G  |
-| Seconds |  D   |  Eb   | E   |   -    |  F\#   |  G   |   Ab    | -   |   Bb    |  B   |    C    |  -  |
-|         | F\#  |   G   | Ab  |   -    |   Bb   |  B   |    C    | -   |    D    |  Eb  |    E    |  -  |
-|         |  Bb  |   B   | C   |   -    |   D    |  Eb  |    E    | -   |   F\#   |  G   |   Ab    |  -  |
-| Thirds  |  Eb  |   E   | -   |  F\#   |   G    |  Ab  |    -    | Bb  |    B    |  C   |    -    |  D  |
-|         |  G   |  Ab   | -   |   Bb   |   B    |  C   |    -    | D   |   Eb    |  E   |    -    | F\# |
-|         |  B   |   C   | -   |   D    |   Eb   |  E   |    -    | F#  |    G    |  Ab  |    -    | Bb  |
-
-{{< /bootstrap-table >}}
 
 Since the structures are identical, we can focus on exploring the roots, seconds and thirds without worrying about the specific notes.
 
 ## Harmony
 
-Conjuring up chords from the table above is almost trivial, practically a matter of enumerating the intervals. Here are the chords that can be created for each class [^really]:
+Conjuring up chords from the table above is almost trivial, practically a matter of enumerating the intervals. Here are the chords that can be created for each class:
 
-|  Class  |                           Triads                            |       Suspended Chords       | Seventh chords | other 4-note chords |
-| :-----: | :---------------------------------------------------------: | :--------------------------: | :------------: | :-----------------: |
-|  Roots  | `I [R 3M 5]`, `Im [R 3m 5]`, `I˚ [R 3m b5]`, `I+ [R 3M #5]` |       `Isus2 [R 2 5]`        |                |                     |
-| Seconds |                       `II+ [S 3M #5]`                       | `IIsus4#5 [R 4 #5]` [^sus#5] |                |                     |
-| Thirds  |         `I [R 3M 5]`, `Im [R 3m 5]`, `I+ [R 3M #5]`         |       `Isus4 [R 4 5]`        |                |                     |
+{{< columntable caption="Interval structure" tag="code">}}
+
+headers: [Class, Triads, Suspended Chords, 7th Chords, Suspended 7th Chords]
+
+rows:
+
+    - [Roots/4, I, Isus2/2, I7 IMaj7, I7sus2/2]
+    - [IMin, IMin7 IMinMaj7]
+    - [I˚, n/a/3 , IMin7(b5), n/a/3]
+    - [I+, I+Maj7]
+    - [Seconds, II+, II7(#5)]
+    - [Thirds/3, IIIb, IIIbsus4/2, IIIbMaj7, IIIbsus4Maj7/2]
+    - [IIIbMin, IIIbMinMaj7]
+    - [IIIb+, n/a, IIIb+Maj7, n/a]
+
+{{< /columntable >}}
 
 [^footnote1]: Since there are 9 tones in this scale, choosing the right letter notation is tricky so I just arbitrarily decided to not use double or unusual accidentals. I'm also not too concerned about calling intervals by the natural relative names. So instead of calling the fourth degree `Fb`, I'm just going to call it `E` and instead of saying it is a diminished fourth from the first degree, I'll just say it's a minor third from it.
-[^sus#5]: Should be really viewed as a `Vm/II` inversion.

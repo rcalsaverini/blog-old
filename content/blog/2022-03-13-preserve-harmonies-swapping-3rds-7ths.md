@@ -4,7 +4,7 @@ slug: preserve-harmonies-swapping-3rds-7ths
 description: Do chords that swapp thirds and sevenths retain the same "harmonic feel"
 author: Rafael S. Calsaverini
 date: 2022-03-13T17:15:22.675Z
-lastmod: 2022-03-15T19:49:59.625Z
+lastmod: 2022-03-15T21:10:09.334Z
 draft: false
 tags:
   - Music Theory
